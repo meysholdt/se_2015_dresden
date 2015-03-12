@@ -1,0 +1,15 @@
+grammar org.xtext.quickfix.ExampleQuickfix with org.eclipse.xtext.common.Terminals
+
+generate exampleQuickfix "http://www.xtext.org/quickfix/ExampleQuickfix"
+
+Model:
+	(cities+=City)*;
+
+City:
+	'city' name=STRING '{'
+	(sights+=Sight)*
+	'}';
+
+Sight:
+	'sight' name=STRING
+	description=STRING;

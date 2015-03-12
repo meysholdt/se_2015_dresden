@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+<template autoinsert="false" context="org.eclipse.xtext.tutorial.survey.Survey.kw_page" 
+	deleted="false" description="new Page" enabled="true" id="page" 
+	name="page">page ${title} (
+	${cursor}
+)
+</template>
+<template autoinsert="false" context="org.eclipse.xtext.tutorial.survey.Survey.kw_choice" 
+	deleted="false" description="new single choice question" enabled="true" id="singleChoice" 
+	name="single choice">single choice ${short_description} "${long_description}" (
+	"${option_1}" 
+	"${option_2}"
+)
+</template>
+</templates>

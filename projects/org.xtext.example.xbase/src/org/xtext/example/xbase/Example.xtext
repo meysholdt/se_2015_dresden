@@ -1,0 +1,25 @@
+grammar org.xtext.example.xbase.Example with org.eclipse.xtext.xbase.Xbase
+
+generate example "http://www.xtext.org/example/xbase/Example"
+
+Package:
+	'package' name=QualifiedName
+	classes+=Class*;
+
+Class:
+	'class' name=ID '{'
+		members+=Member*
+	'}'
+;
+
+Member:
+	Field | Method
+;
+
+Field:
+	'field' type=JvmTypeReference name=ID
+;
+
+Method:
+	'method' name=ID '(' parameters+=JvmFormalParameter (',' parameters+=JvmFormalParameter)* ')' body=XBlockExpression
+;
