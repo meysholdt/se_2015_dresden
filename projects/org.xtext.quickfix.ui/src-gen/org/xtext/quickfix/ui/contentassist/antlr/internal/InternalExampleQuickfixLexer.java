@@ -1,8 +1,8 @@
 package org.xtext.quickfix.ui.contentassist.antlr.internal;
 
-// Hack: Use our own Lexer superclass by means of import.
+// Hack: Use our own Lexer superclass by means of import. 
 // Currently there is no other way to specify the superclass for the lexer.
-import org.eclipse.xtext.ui.editor.contentassist.antlr.internal.Lexer;
+import org.eclipse.xtext.ide.editor.contentassist.antlr.internal.Lexer;
 
 
 import org.antlr.runtime.*;
@@ -28,7 +28,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
     // delegates
     // delegators
 
-    public InternalExampleQuickfixLexer() {;}
+    public InternalExampleQuickfixLexer() {;} 
     public InternalExampleQuickfixLexer(CharStream input) {
         this(input, new RecognizerSharedState());
     }
@@ -46,7 +46,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:11:7: ( 'city' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:11:9: 'city'
             {
-            match("city");
+            match("city"); 
 
 
             }
@@ -67,7 +67,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:12:7: ( '{' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:12:9: '{'
             {
-            match('{');
+            match('{'); 
 
             }
 
@@ -87,7 +87,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:13:7: ( '}' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:13:9: '}'
             {
-            match('}');
+            match('}'); 
 
             }
 
@@ -107,7 +107,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:14:7: ( 'sight' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:14:9: 'sight'
             {
-            match("sight");
+            match("sight"); 
 
 
             }
@@ -139,7 +139,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
                 case 1 :
                     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:477:11: '^'
                     {
-                    match('^');
+                    match('^'); 
 
                     }
                     break;
@@ -167,24 +167,24 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                 switch (alt2) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:
-		    {
-		    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
-		        input.consume();
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:
+            	    {
+            	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
+            	        input.consume();
 
-		    }
-		    else {
-		        MismatchedSetException mse = new MismatchedSetException(null,input);
-		        recover(mse);
-		        throw mse;}
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop2;
+            	default :
+            	    break loop2;
                 }
             } while (true);
 
@@ -220,16 +220,16 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                 switch (alt3) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:479:13: '0' .. '9'
-		    {
-		    matchRange('0','9');
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:479:13: '0' .. '9'
+            	    {
+            	    matchRange('0','9'); 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    if ( cnt3 >= 1 ) break loop3;
+            	default :
+            	    if ( cnt3 >= 1 ) break loop3;
                         EarlyExitException eee =
                             new EarlyExitException(3, input);
                         throw eee;
@@ -253,10 +253,10 @@ public class InternalExampleQuickfixLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -274,10 +274,10 @@ public class InternalExampleQuickfixLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
-                    match('\"');
-                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    match('\"'); 
+                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -292,52 +292,44 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                         switch (alt4) {
-			case 1 :
-			    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
-			    {
-			    match('\\');
-			    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
-			        input.consume();
+                    	case 1 :
+                    	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:21: '\\\\' .
+                    	    {
+                    	    match('\\'); 
+                    	    matchAny(); 
 
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    break;
+                    	case 2 :
+                    	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
+                    	        input.consume();
 
-
-			    }
-			    break;
-			case 2 :
-			    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:66: ~ ( ( '\\\\' | '\"' ) )
-			    {
-			    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
-			        input.consume();
-
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    else {
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
-			    }
-			    break;
+                    	    }
+                    	    break;
 
-			default :
-			    break loop4;
+                    	default :
+                    	    break loop4;
                         }
                     } while (true);
 
-                    match('\"');
+                    match('\"'); 
 
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
-                    match('\'');
-                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    match('\''); 
+                    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -352,44 +344,36 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                         switch (alt5) {
-			case 1 :
-			    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
-			    {
-			    match('\\');
-			    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
-			        input.consume();
+                    	case 1 :
+                    	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:54: '\\\\' .
+                    	    {
+                    	    match('\\'); 
+                    	    matchAny(); 
 
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    break;
+                    	case 2 :
+                    	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
+                    	        input.consume();
 
-
-			    }
-			    break;
-			case 2 :
-			    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:481:137: ~ ( ( '\\\\' | '\\'' ) )
-			    {
-			    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
-			        input.consume();
-
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    else {
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
-			    }
-			    break;
+                    	    }
+                    	    break;
 
-			default :
-			    break loop5;
+                    	default :
+                    	    break loop5;
                         }
                     } while (true);
 
-                    match('\'');
+                    match('\''); 
 
                     }
                     break;
@@ -415,7 +399,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:483:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:483:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
-            match("/*");
+            match("/*"); 
 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:483:24: ( options {greedy=false; } : . )*
             loop7:
@@ -441,20 +425,20 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                 switch (alt7) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:483:52: .
-		    {
-		    matchAny();
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:483:52: .
+            	    {
+            	    matchAny(); 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop7;
+            	default :
+            	    break loop7;
                 }
             } while (true);
 
-            match("*/");
+            match("*/"); 
 
 
             }
@@ -475,7 +459,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:485:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:485:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
-            match("//");
+            match("//"); 
 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:485:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
@@ -489,24 +473,24 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                 switch (alt8) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:485:24: ~ ( ( '\\n' | '\\r' ) )
-		    {
-		    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
-		        input.consume();
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:485:24: ~ ( ( '\\n' | '\\r' ) )
+            	    {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
+            	        input.consume();
 
-		    }
-		    else {
-		        MismatchedSetException mse = new MismatchedSetException(null,input);
-		        recover(mse);
-		        throw mse;}
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop8;
+            	default :
+            	    break loop8;
                 }
             } while (true);
 
@@ -532,14 +516,14 @@ public class InternalExampleQuickfixLexer extends Lexer {
                         case 1 :
                             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:485:41: '\\r'
                             {
-                            match('\r');
+                            match('\r'); 
 
                             }
                             break;
 
                     }
 
-                    match('\n');
+                    match('\n'); 
 
                     }
                     break;
@@ -578,24 +562,24 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
 
                 switch (alt11) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:
-		    {
-		    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
-		        input.consume();
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:
+            	    {
+            	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
+            	        input.consume();
 
-		    }
-		    else {
-		        MismatchedSetException mse = new MismatchedSetException(null,input);
-		        recover(mse);
-		        throw mse;}
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    if ( cnt11 >= 1 ) break loop11;
+            	default :
+            	    if ( cnt11 >= 1 ) break loop11;
                         EarlyExitException eee =
                             new EarlyExitException(11, input);
                         throw eee;
@@ -622,7 +606,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:489:16: ( . )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:489:18: .
             {
-            matchAny();
+            matchAny(); 
 
             }
 
@@ -642,77 +626,77 @@ public class InternalExampleQuickfixLexer extends Lexer {
             case 1 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:10: T__11
                 {
-                mT__11();
+                mT__11(); 
 
                 }
                 break;
             case 2 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:16: T__12
                 {
-                mT__12();
+                mT__12(); 
 
                 }
                 break;
             case 3 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:22: T__13
                 {
-                mT__13();
+                mT__13(); 
 
                 }
                 break;
             case 4 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:28: T__14
                 {
-                mT__14();
+                mT__14(); 
 
                 }
                 break;
             case 5 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:34: RULE_ID
                 {
-                mRULE_ID();
+                mRULE_ID(); 
 
                 }
                 break;
             case 6 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:42: RULE_INT
                 {
-                mRULE_INT();
+                mRULE_INT(); 
 
                 }
                 break;
             case 7 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:51: RULE_STRING
                 {
-                mRULE_STRING();
+                mRULE_STRING(); 
 
                 }
                 break;
             case 8 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:63: RULE_ML_COMMENT
                 {
-                mRULE_ML_COMMENT();
+                mRULE_ML_COMMENT(); 
 
                 }
                 break;
             case 9 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:79: RULE_SL_COMMENT
                 {
-                mRULE_SL_COMMENT();
+                mRULE_SL_COMMENT(); 
 
                 }
                 break;
             case 10 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:95: RULE_WS
                 {
-                mRULE_WS();
+                mRULE_WS(); 
 
                 }
                 break;
             case 11 :
                 // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:1:103: RULE_ANY_OTHER
                 {
-                mRULE_ANY_OTHER();
+                mRULE_ANY_OTHER(); 
 
                 }
                 break;
@@ -736,8 +720,8 @@ public class InternalExampleQuickfixLexer extends Lexer {
         "\1\164\3\uffff\1\147\5\uffff\1\171\1\150\1\172\1\164\1\uffff\1\172"+
         "\1\uffff";
     static final String DFA12_acceptS =
-        "\2\uffff\1\2\1\3\2\uffff\1\5\1\6\3\uffff\1\12\1\13\1\uffff\1\5\1"+
-        "\2\1\3\1\uffff\1\6\1\7\1\10\1\11\1\12\4\uffff\1\1\1\uffff\1\4";
+        "\2\uffff\1\2\1\3\2\uffff\1\5\1\6\3\uffff\1\12\1\13\1\uffff\1\5"+
+        "\1\2\1\3\1\uffff\1\6\1\7\1\10\1\11\1\12\4\uffff\1\1\1\uffff\1\4";
     static final String DFA12_specialS =
         "\1\0\7\uffff\1\1\1\2\24\uffff}>";
     static final String[] DFA12_transitionS = {
@@ -809,9 +793,9 @@ public class InternalExampleQuickfixLexer extends Lexer {
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
-		int _s = s;
+        	int _s = s;
             switch ( s ) {
-                    case 0 :
+                    case 0 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
@@ -841,7 +825,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 1 :
+                    case 1 : 
                         int LA12_8 = input.LA(1);
 
                         s = -1;
@@ -851,7 +835,7 @@ public class InternalExampleQuickfixLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 2 :
+                    case 2 : 
                         int LA12_9 = input.LA(1);
 
                         s = -1;
@@ -868,6 +852,6 @@ public class InternalExampleQuickfixLexer extends Lexer {
             throw nvae;
         }
     }
-
+ 
 
 }

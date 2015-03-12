@@ -33,8 +33,8 @@
                     definitionId="org.xtext.example.Unorderedgroups.Editor.opened">
             </reference>
          </activeWhen>
-	</handler>
-	<!-- copy qualified name -->
+      	</handler>
+      	<!-- copy qualified name -->
         <handler
             class="org.xtext.example.ui.UnorderedgroupsExecutableExtensionFactory:org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedNameHandler"
             commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName">
@@ -46,8 +46,8 @@
             class="org.xtext.example.ui.UnorderedgroupsExecutableExtensionFactory:org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedNameHandler"
             commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedName">
             <activeWhen>
-		<and>
-			<reference definitionId="org.xtext.example.Unorderedgroups.XtextEditor.opened" />
+            	<and>
+            		<reference definitionId="org.xtext.example.Unorderedgroups.XtextEditor.opened" />
 	                <iterate>
 						<adapt type="org.eclipse.xtext.ui.editor.outline.IOutlineNode" />
 					</iterate>
@@ -60,20 +60,20 @@
             <and>
                 <reference definitionId="isActiveEditorAnInstanceOfXtextEditor"/>
                 <with variable="activeEditor">
-                    <test property="org.eclipse.xtext.ui.editor.XtextEditor.languageName"
-                        value="org.xtext.example.Unorderedgroups"
+                    <test property="org.eclipse.xtext.ui.editor.XtextEditor.languageName" 
+                        value="org.xtext.example.Unorderedgroups" 
                         forcePluginActivation="true"/>
-                </with>
+                </with>        
             </and>
         </definition>
         <definition id="org.xtext.example.Unorderedgroups.XtextEditor.opened">
             <and>
                 <reference definitionId="isXtextEditorActive"/>
                 <with variable="activeEditor">
-                    <test property="org.eclipse.xtext.ui.editor.XtextEditor.languageName"
-                        value="org.xtext.example.Unorderedgroups"
+                    <test property="org.eclipse.xtext.ui.editor.XtextEditor.languageName" 
+                        value="org.xtext.example.Unorderedgroups" 
                         forcePluginActivation="true"/>
-                </with>
+                </with>        
             </and>
         </definition>
     </extension>
@@ -152,31 +152,31 @@
                     definitionId="org.xtext.example.Unorderedgroups.Editor.opened">
                 </reference>
             </visibleWhen>
-         </command>
+         </command>  
          </menuContribution>
          <!-- copy qualified name -->
          <menuContribution locationURI="popup:#TextEditorContext?after=copy">
-		<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName"
-			style="push" tooltip="Copy Qualified Name">
-		<visibleWhen checkEnabled="false">
-			<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened" />
-		</visibleWhen>
-		</command>
+         	<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName" 
+         		style="push" tooltip="Copy Qualified Name">
+            	<visibleWhen checkEnabled="false">
+                	<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened" />
+            	</visibleWhen>
+         	</command>  
          </menuContribution>
          <menuContribution locationURI="menu:edit?after=copy">
-		<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName"
-		style="push" tooltip="Copy Qualified Name">
-		<visibleWhen checkEnabled="false">
-			<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened" />
-		</visibleWhen>
-		</command>
+         	<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName"
+            	style="push" tooltip="Copy Qualified Name">
+            	<visibleWhen checkEnabled="false">
+                	<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened" />
+            	</visibleWhen>
+         	</command>  
          </menuContribution>
          <menuContribution locationURI="popup:org.eclipse.xtext.ui.outline?after=additions">
-			<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedName"
+			<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedName" 
 				style="push" tooltip="Copy Qualified Name">
-			<visibleWhen checkEnabled="false">
-			<and>
-				<reference definitionId="org.xtext.example.Unorderedgroups.XtextEditor.opened" />
+         		<visibleWhen checkEnabled="false">
+	            	<and>
+	            		<reference definitionId="org.xtext.example.Unorderedgroups.XtextEditor.opened" />
 						<iterate>
 							<adapt type="org.eclipse.xtext.ui.editor.outline.IOutlineNode" />
 						</iterate>
@@ -189,9 +189,9 @@
 		<menuContribution locationURI="popup:#TextEditorContext?endof=group.find">
 			<command commandId="org.eclipse.xtext.ui.editor.FindReferences">
 				<visibleWhen checkEnabled="false">
-			<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened">
-			</reference>
-		</visibleWhen>
+                	<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened">
+                	</reference>
+            	</visibleWhen>
 			</command>
 		</menuContribution>
 	</extension>
@@ -205,7 +205,7 @@
                 </reference>
             </activeWhen>
         </handler>
-    </extension>
+    </extension>   
 
 <!-- adding resource factories -->
 
@@ -279,11 +279,32 @@
 	        <filter name="projectNature" value="org.eclipse.xtext.ui.shared.xtextNature"/>
         </page>
     </extension>
+    <extension point="org.eclipse.ui.menus">
+		<menuContribution locationURI="popup:#TextEditorContext?after=xtext.ui.openDeclaration">
+			<command
+				commandId="org.eclipse.xtext.ui.OpenGeneratedFileCommand"
+				id="org.xtext.example.Unorderedgroups.OpenGeneratedCode"
+				style="push">
+					<visibleWhen checkEnabled="false">
+						<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened" />
+					</visibleWhen>
+			</command>
+		</menuContribution>
+	</extension>
+	<extension point="org.eclipse.ui.handlers">
+		<handler
+			class="org.xtext.example.ui.UnorderedgroupsExecutableExtensionFactory:org.eclipse.xtext.ui.generator.trace.OpenGeneratedFileHandler"
+			commandId="org.eclipse.xtext.ui.OpenGeneratedFileCommand">
+				<activeWhen>
+					<reference definitionId="org.xtext.example.Unorderedgroups.Editor.opened" />
+				</activeWhen>
+		</handler>
+	</extension>
 
 	<!-- Quick Outline -->
 	<extension
 		point="org.eclipse.ui.handlers">
-		<handler
+		<handler 
 			class="org.xtext.example.ui.UnorderedgroupsExecutableExtensionFactory:org.eclipse.xtext.ui.editor.outline.quickoutline.ShowQuickOutlineActionHandler"
 			commandId="org.eclipse.xtext.ui.editor.outline.QuickOutline">
 			<activeWhen>
@@ -341,9 +362,9 @@
             </attribute>
         </markerResolutionGenerator>
     </extension>
-	<!-- Rename Refactoring -->
+   	<!-- Rename Refactoring -->
 	<extension point="org.eclipse.ui.handlers">
-		<handler
+		<handler 
 			class="org.xtext.example.ui.UnorderedgroupsExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler"
 			commandId="org.eclipse.xtext.ui.refactoring.RenameElement">
 			<activeWhen>
@@ -393,6 +414,12 @@
             class="org.xtext.example.ui.UnorderedgroupsExecutableExtensionFactory:org.eclipse.xtext.ui.editor.model.XtextDocumentProvider"
             extensions="unordered">
     </provider>
+  </extension>
+  <extension point="org.eclipse.team.core.fileTypes">
+    <fileTypes
+            extension="unordered"
+            type="text">
+    </fileTypes>
   </extension>
 
 </plugin>

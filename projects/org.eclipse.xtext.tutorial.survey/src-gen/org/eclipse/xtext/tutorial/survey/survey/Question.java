@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Question#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Question#getText <em>Text</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.tutorial.survey.survey.SurveyPackage#getQuestion()
  * @model

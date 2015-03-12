@@ -26,10 +26,10 @@ import org.xtext.quickfix.exampleQuickfix.Model;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.quickfix.exampleQuickfix.impl.ModelImpl#getCities <em>Cities</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

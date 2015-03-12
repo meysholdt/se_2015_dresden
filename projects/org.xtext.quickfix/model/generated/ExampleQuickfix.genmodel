@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.xtext.quickfix/src-gen" editDirectory="/org.xtext.quickfix.edit/src"
     editorDirectory="/org.xtext.quickfix.editor/src" modelPluginID="org.xtext.quickfix"
     forceOverwrite="true" modelName="ExampleQuickfix" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.quickfix.edit"
+    complianceLevel="6.0" copyrightFields="false" editPluginID="org.xtext.quickfix.edit"
     editorPluginID="org.xtext.quickfix.editor" runtimeVersion="2.10">
   <genPackages prefix="ExampleQuickfix" basePackage="org.xtext.quickfix" disposableProviderFactory="true"
       fileExtensions="quickfix" ecorePackage="ExampleQuickfix.ecore#/">

@@ -1,4 +1,4 @@
-package org.xtext.quickfix.ui.contentassist.antlr.internal;
+package org.xtext.quickfix.ui.contentassist.antlr.internal; 
 
 import java.io.InputStream;
 import org.eclipse.xtext.*;
@@ -8,8 +8,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream.HiddenTokens;
-import org.eclipse.xtext.ui.editor.contentassist.antlr.internal.AbstractInternalContentAssistParser;
-import org.eclipse.xtext.ui.editor.contentassist.antlr.internal.DFA;
+import org.eclipse.xtext.ide.editor.contentassist.antlr.internal.AbstractInternalContentAssistParser;
+import org.eclipse.xtext.ide.editor.contentassist.antlr.internal.DFA;
 import org.xtext.quickfix.services.ExampleQuickfixGrammarAccess;
 
 
@@ -46,29 +46,29 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         public InternalExampleQuickfixParser(TokenStream input, RecognizerSharedState state) {
             super(input, state);
-
+             
         }
-
+        
 
     public String[] getTokenNames() { return InternalExampleQuickfixParser.tokenNames; }
     public String getGrammarFileName() { return "../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g"; }
 
 
-
-	private ExampleQuickfixGrammarAccess grammarAccess;
-
+     
+     	private ExampleQuickfixGrammarAccess grammarAccess;
+     	
         public void setGrammarAccess(ExampleQuickfixGrammarAccess grammarAccess) {
-		this.grammarAccess = grammarAccess;
+        	this.grammarAccess = grammarAccess;
         }
-
+        
         @Override
         protected Grammar getGrammar() {
-		return grammarAccess.getGrammar();
+        	return grammarAccess.getGrammar();
         }
-
+        
         @Override
         protected String getValueForTokenName(String tokenName) {
-		return tokenName;
+        	return tokenName;
         }
 
 
@@ -81,14 +81,14 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:61:1: ( ruleModel EOF )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:62:1: ruleModel EOF
             {
-             before(grammarAccess.getModelRule());
+             before(grammarAccess.getModelRule()); 
             pushFollow(FOLLOW_ruleModel_in_entryRuleModel61);
             ruleModel();
 
             state._fsp--;
 
-             after(grammarAccess.getModelRule());
-            match(input,EOF,FOLLOW_EOF_in_entryRuleModel68);
+             after(grammarAccess.getModelRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleModel68); 
 
             }
 
@@ -108,8 +108,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:69:1: ruleModel : ( ( rule__Model__CitiesAssignment )* ) ;
     public final void ruleModel() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:73:2: ( ( ( rule__Model__CitiesAssignment )* ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:74:1: ( ( rule__Model__CitiesAssignment )* )
@@ -117,7 +117,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:74:1: ( ( rule__Model__CitiesAssignment )* )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:75:1: ( rule__Model__CitiesAssignment )*
             {
-             before(grammarAccess.getModelAccess().getCitiesAssignment());
+             before(grammarAccess.getModelAccess().getCitiesAssignment()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:76:1: ( rule__Model__CitiesAssignment )*
             loop1:
             do {
@@ -130,24 +130,24 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
 
                 switch (alt1) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:76:2: rule__Model__CitiesAssignment
-		    {
-		    pushFollow(FOLLOW_rule__Model__CitiesAssignment_in_ruleModel94);
-		    rule__Model__CitiesAssignment();
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:76:2: rule__Model__CitiesAssignment
+            	    {
+            	    pushFollow(FOLLOW_rule__Model__CitiesAssignment_in_ruleModel94);
+            	    rule__Model__CitiesAssignment();
 
-		    state._fsp--;
+            	    state._fsp--;
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop1;
+            	default :
+            	    break loop1;
                 }
             } while (true);
 
-             after(grammarAccess.getModelAccess().getCitiesAssignment());
+             after(grammarAccess.getModelAccess().getCitiesAssignment()); 
 
             }
 
@@ -161,7 +161,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -176,14 +176,14 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:89:1: ( ruleCity EOF )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:90:1: ruleCity EOF
             {
-             before(grammarAccess.getCityRule());
+             before(grammarAccess.getCityRule()); 
             pushFollow(FOLLOW_ruleCity_in_entryRuleCity122);
             ruleCity();
 
             state._fsp--;
 
-             after(grammarAccess.getCityRule());
-            match(input,EOF,FOLLOW_EOF_in_entryRuleCity129);
+             after(grammarAccess.getCityRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleCity129); 
 
             }
 
@@ -203,8 +203,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:97:1: ruleCity : ( ( rule__City__Group__0 ) ) ;
     public final void ruleCity() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:101:2: ( ( ( rule__City__Group__0 ) ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:102:1: ( ( rule__City__Group__0 ) )
@@ -212,7 +212,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:102:1: ( ( rule__City__Group__0 ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:103:1: ( rule__City__Group__0 )
             {
-             before(grammarAccess.getCityAccess().getGroup());
+             before(grammarAccess.getCityAccess().getGroup()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:104:1: ( rule__City__Group__0 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:104:2: rule__City__Group__0
             {
@@ -224,7 +224,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
             }
 
-             after(grammarAccess.getCityAccess().getGroup());
+             after(grammarAccess.getCityAccess().getGroup()); 
 
             }
 
@@ -238,7 +238,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -253,14 +253,14 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:117:1: ( ruleSight EOF )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:118:1: ruleSight EOF
             {
-             before(grammarAccess.getSightRule());
+             before(grammarAccess.getSightRule()); 
             pushFollow(FOLLOW_ruleSight_in_entryRuleSight182);
             ruleSight();
 
             state._fsp--;
 
-             after(grammarAccess.getSightRule());
-            match(input,EOF,FOLLOW_EOF_in_entryRuleSight189);
+             after(grammarAccess.getSightRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleSight189); 
 
             }
 
@@ -280,8 +280,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:125:1: ruleSight : ( ( rule__Sight__Group__0 ) ) ;
     public final void ruleSight() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:129:2: ( ( ( rule__Sight__Group__0 ) ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:130:1: ( ( rule__Sight__Group__0 ) )
@@ -289,7 +289,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:130:1: ( ( rule__Sight__Group__0 ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:131:1: ( rule__Sight__Group__0 )
             {
-             before(grammarAccess.getSightAccess().getGroup());
+             before(grammarAccess.getSightAccess().getGroup()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:132:1: ( rule__Sight__Group__0 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:132:2: rule__Sight__Group__0
             {
@@ -301,7 +301,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
             }
 
-             after(grammarAccess.getSightAccess().getGroup());
+             after(grammarAccess.getSightAccess().getGroup()); 
 
             }
 
@@ -315,7 +315,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -327,8 +327,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:146:1: rule__City__Group__0 : rule__City__Group__0__Impl rule__City__Group__1 ;
     public final void rule__City__Group__0() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:150:1: ( rule__City__Group__0__Impl rule__City__Group__1 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:151:2: rule__City__Group__0__Impl rule__City__Group__1
@@ -353,7 +353,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -365,8 +365,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:158:1: rule__City__Group__0__Impl : ( 'city' ) ;
     public final void rule__City__Group__0__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:162:1: ( ( 'city' ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:163:1: ( 'city' )
@@ -374,9 +374,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:163:1: ( 'city' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:164:1: 'city'
             {
-             before(grammarAccess.getCityAccess().getCityKeyword_0());
-            match(input,11,FOLLOW_11_in_rule__City__Group__0__Impl280);
-             after(grammarAccess.getCityAccess().getCityKeyword_0());
+             before(grammarAccess.getCityAccess().getCityKeyword_0()); 
+            match(input,11,FOLLOW_11_in_rule__City__Group__0__Impl280); 
+             after(grammarAccess.getCityAccess().getCityKeyword_0()); 
 
             }
 
@@ -390,7 +390,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -402,8 +402,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:177:1: rule__City__Group__1 : rule__City__Group__1__Impl rule__City__Group__2 ;
     public final void rule__City__Group__1() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:181:1: ( rule__City__Group__1__Impl rule__City__Group__2 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:182:2: rule__City__Group__1__Impl rule__City__Group__2
@@ -428,7 +428,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -440,8 +440,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:189:1: rule__City__Group__1__Impl : ( ( rule__City__NameAssignment_1 ) ) ;
     public final void rule__City__Group__1__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:193:1: ( ( ( rule__City__NameAssignment_1 ) ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:194:1: ( ( rule__City__NameAssignment_1 ) )
@@ -449,7 +449,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:194:1: ( ( rule__City__NameAssignment_1 ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:195:1: ( rule__City__NameAssignment_1 )
             {
-             before(grammarAccess.getCityAccess().getNameAssignment_1());
+             before(grammarAccess.getCityAccess().getNameAssignment_1()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:196:1: ( rule__City__NameAssignment_1 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:196:2: rule__City__NameAssignment_1
             {
@@ -461,7 +461,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
             }
 
-             after(grammarAccess.getCityAccess().getNameAssignment_1());
+             after(grammarAccess.getCityAccess().getNameAssignment_1()); 
 
             }
 
@@ -475,7 +475,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -487,8 +487,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:206:1: rule__City__Group__2 : rule__City__Group__2__Impl rule__City__Group__3 ;
     public final void rule__City__Group__2() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:210:1: ( rule__City__Group__2__Impl rule__City__Group__3 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:211:2: rule__City__Group__2__Impl rule__City__Group__3
@@ -513,7 +513,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -525,8 +525,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:218:1: rule__City__Group__2__Impl : ( '{' ) ;
     public final void rule__City__Group__2__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:222:1: ( ( '{' ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:223:1: ( '{' )
@@ -534,9 +534,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:223:1: ( '{' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:224:1: '{'
             {
-             before(grammarAccess.getCityAccess().getLeftCurlyBracketKeyword_2());
-            match(input,12,FOLLOW_12_in_rule__City__Group__2__Impl402);
-             after(grammarAccess.getCityAccess().getLeftCurlyBracketKeyword_2());
+             before(grammarAccess.getCityAccess().getLeftCurlyBracketKeyword_2()); 
+            match(input,12,FOLLOW_12_in_rule__City__Group__2__Impl402); 
+             after(grammarAccess.getCityAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
 
@@ -550,7 +550,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -562,8 +562,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:237:1: rule__City__Group__3 : rule__City__Group__3__Impl rule__City__Group__4 ;
     public final void rule__City__Group__3() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:241:1: ( rule__City__Group__3__Impl rule__City__Group__4 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:242:2: rule__City__Group__3__Impl rule__City__Group__4
@@ -588,7 +588,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -600,8 +600,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:249:1: rule__City__Group__3__Impl : ( ( rule__City__SightsAssignment_3 )* ) ;
     public final void rule__City__Group__3__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:253:1: ( ( ( rule__City__SightsAssignment_3 )* ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:254:1: ( ( rule__City__SightsAssignment_3 )* )
@@ -609,7 +609,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:254:1: ( ( rule__City__SightsAssignment_3 )* )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:255:1: ( rule__City__SightsAssignment_3 )*
             {
-             before(grammarAccess.getCityAccess().getSightsAssignment_3());
+             before(grammarAccess.getCityAccess().getSightsAssignment_3()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:256:1: ( rule__City__SightsAssignment_3 )*
             loop2:
             do {
@@ -622,24 +622,24 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
 
                 switch (alt2) {
-		case 1 :
-		    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:256:2: rule__City__SightsAssignment_3
-		    {
-		    pushFollow(FOLLOW_rule__City__SightsAssignment_3_in_rule__City__Group__3__Impl463);
-		    rule__City__SightsAssignment_3();
+            	case 1 :
+            	    // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:256:2: rule__City__SightsAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_rule__City__SightsAssignment_3_in_rule__City__Group__3__Impl463);
+            	    rule__City__SightsAssignment_3();
 
-		    state._fsp--;
+            	    state._fsp--;
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop2;
+            	default :
+            	    break loop2;
                 }
             } while (true);
 
-             after(grammarAccess.getCityAccess().getSightsAssignment_3());
+             after(grammarAccess.getCityAccess().getSightsAssignment_3()); 
 
             }
 
@@ -653,7 +653,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -665,8 +665,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:266:1: rule__City__Group__4 : rule__City__Group__4__Impl ;
     public final void rule__City__Group__4() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:270:1: ( rule__City__Group__4__Impl )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:271:2: rule__City__Group__4__Impl
@@ -686,7 +686,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -698,8 +698,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:277:1: rule__City__Group__4__Impl : ( '}' ) ;
     public final void rule__City__Group__4__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:281:1: ( ( '}' ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:282:1: ( '}' )
@@ -707,9 +707,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:282:1: ( '}' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:283:1: '}'
             {
-             before(grammarAccess.getCityAccess().getRightCurlyBracketKeyword_4());
-            match(input,13,FOLLOW_13_in_rule__City__Group__4__Impl522);
-             after(grammarAccess.getCityAccess().getRightCurlyBracketKeyword_4());
+             before(grammarAccess.getCityAccess().getRightCurlyBracketKeyword_4()); 
+            match(input,13,FOLLOW_13_in_rule__City__Group__4__Impl522); 
+             after(grammarAccess.getCityAccess().getRightCurlyBracketKeyword_4()); 
 
             }
 
@@ -723,7 +723,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -735,8 +735,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:306:1: rule__Sight__Group__0 : rule__Sight__Group__0__Impl rule__Sight__Group__1 ;
     public final void rule__Sight__Group__0() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:310:1: ( rule__Sight__Group__0__Impl rule__Sight__Group__1 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:311:2: rule__Sight__Group__0__Impl rule__Sight__Group__1
@@ -761,7 +761,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -773,8 +773,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:318:1: rule__Sight__Group__0__Impl : ( 'sight' ) ;
     public final void rule__Sight__Group__0__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:322:1: ( ( 'sight' ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:323:1: ( 'sight' )
@@ -782,9 +782,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:323:1: ( 'sight' )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:324:1: 'sight'
             {
-             before(grammarAccess.getSightAccess().getSightKeyword_0());
-            match(input,14,FOLLOW_14_in_rule__Sight__Group__0__Impl594);
-             after(grammarAccess.getSightAccess().getSightKeyword_0());
+             before(grammarAccess.getSightAccess().getSightKeyword_0()); 
+            match(input,14,FOLLOW_14_in_rule__Sight__Group__0__Impl594); 
+             after(grammarAccess.getSightAccess().getSightKeyword_0()); 
 
             }
 
@@ -798,7 +798,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -810,8 +810,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:337:1: rule__Sight__Group__1 : rule__Sight__Group__1__Impl rule__Sight__Group__2 ;
     public final void rule__Sight__Group__1() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:341:1: ( rule__Sight__Group__1__Impl rule__Sight__Group__2 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:342:2: rule__Sight__Group__1__Impl rule__Sight__Group__2
@@ -836,7 +836,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -848,8 +848,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:349:1: rule__Sight__Group__1__Impl : ( ( rule__Sight__NameAssignment_1 ) ) ;
     public final void rule__Sight__Group__1__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:353:1: ( ( ( rule__Sight__NameAssignment_1 ) ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:354:1: ( ( rule__Sight__NameAssignment_1 ) )
@@ -857,7 +857,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:354:1: ( ( rule__Sight__NameAssignment_1 ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:355:1: ( rule__Sight__NameAssignment_1 )
             {
-             before(grammarAccess.getSightAccess().getNameAssignment_1());
+             before(grammarAccess.getSightAccess().getNameAssignment_1()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:356:1: ( rule__Sight__NameAssignment_1 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:356:2: rule__Sight__NameAssignment_1
             {
@@ -869,7 +869,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
             }
 
-             after(grammarAccess.getSightAccess().getNameAssignment_1());
+             after(grammarAccess.getSightAccess().getNameAssignment_1()); 
 
             }
 
@@ -883,7 +883,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -895,8 +895,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:366:1: rule__Sight__Group__2 : rule__Sight__Group__2__Impl ;
     public final void rule__Sight__Group__2() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:370:1: ( rule__Sight__Group__2__Impl )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:371:2: rule__Sight__Group__2__Impl
@@ -916,7 +916,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -928,8 +928,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:377:1: rule__Sight__Group__2__Impl : ( ( rule__Sight__DescriptionAssignment_2 ) ) ;
     public final void rule__Sight__Group__2__Impl() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:381:1: ( ( ( rule__Sight__DescriptionAssignment_2 ) ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:382:1: ( ( rule__Sight__DescriptionAssignment_2 ) )
@@ -937,7 +937,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:382:1: ( ( rule__Sight__DescriptionAssignment_2 ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:383:1: ( rule__Sight__DescriptionAssignment_2 )
             {
-             before(grammarAccess.getSightAccess().getDescriptionAssignment_2());
+             before(grammarAccess.getSightAccess().getDescriptionAssignment_2()); 
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:384:1: ( rule__Sight__DescriptionAssignment_2 )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:384:2: rule__Sight__DescriptionAssignment_2
             {
@@ -949,7 +949,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
 
             }
 
-             after(grammarAccess.getSightAccess().getDescriptionAssignment_2());
+             after(grammarAccess.getSightAccess().getDescriptionAssignment_2()); 
 
             }
 
@@ -963,7 +963,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -975,8 +975,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:401:1: rule__Model__CitiesAssignment : ( ruleCity ) ;
     public final void rule__Model__CitiesAssignment() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:405:1: ( ( ruleCity ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:406:1: ( ruleCity )
@@ -984,13 +984,13 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:406:1: ( ruleCity )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:407:1: ruleCity
             {
-             before(grammarAccess.getModelAccess().getCitiesCityParserRuleCall_0());
+             before(grammarAccess.getModelAccess().getCitiesCityParserRuleCall_0()); 
             pushFollow(FOLLOW_ruleCity_in_rule__Model__CitiesAssignment753);
             ruleCity();
 
             state._fsp--;
 
-             after(grammarAccess.getModelAccess().getCitiesCityParserRuleCall_0());
+             after(grammarAccess.getModelAccess().getCitiesCityParserRuleCall_0()); 
 
             }
 
@@ -1004,7 +1004,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -1016,8 +1016,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:416:1: rule__City__NameAssignment_1 : ( RULE_STRING ) ;
     public final void rule__City__NameAssignment_1() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:420:1: ( ( RULE_STRING ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:421:1: ( RULE_STRING )
@@ -1025,9 +1025,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:421:1: ( RULE_STRING )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:422:1: RULE_STRING
             {
-             before(grammarAccess.getCityAccess().getNameSTRINGTerminalRuleCall_1_0());
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__City__NameAssignment_1784);
-             after(grammarAccess.getCityAccess().getNameSTRINGTerminalRuleCall_1_0());
+             before(grammarAccess.getCityAccess().getNameSTRINGTerminalRuleCall_1_0()); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__City__NameAssignment_1784); 
+             after(grammarAccess.getCityAccess().getNameSTRINGTerminalRuleCall_1_0()); 
 
             }
 
@@ -1041,7 +1041,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -1053,8 +1053,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:431:1: rule__City__SightsAssignment_3 : ( ruleSight ) ;
     public final void rule__City__SightsAssignment_3() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:435:1: ( ( ruleSight ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:436:1: ( ruleSight )
@@ -1062,13 +1062,13 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:436:1: ( ruleSight )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:437:1: ruleSight
             {
-             before(grammarAccess.getCityAccess().getSightsSightParserRuleCall_3_0());
+             before(grammarAccess.getCityAccess().getSightsSightParserRuleCall_3_0()); 
             pushFollow(FOLLOW_ruleSight_in_rule__City__SightsAssignment_3815);
             ruleSight();
 
             state._fsp--;
 
-             after(grammarAccess.getCityAccess().getSightsSightParserRuleCall_3_0());
+             after(grammarAccess.getCityAccess().getSightsSightParserRuleCall_3_0()); 
 
             }
 
@@ -1082,7 +1082,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -1094,8 +1094,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:446:1: rule__Sight__NameAssignment_1 : ( RULE_STRING ) ;
     public final void rule__Sight__NameAssignment_1() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:450:1: ( ( RULE_STRING ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:451:1: ( RULE_STRING )
@@ -1103,9 +1103,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:451:1: ( RULE_STRING )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:452:1: RULE_STRING
             {
-             before(grammarAccess.getSightAccess().getNameSTRINGTerminalRuleCall_1_0());
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Sight__NameAssignment_1846);
-             after(grammarAccess.getSightAccess().getNameSTRINGTerminalRuleCall_1_0());
+             before(grammarAccess.getSightAccess().getNameSTRINGTerminalRuleCall_1_0()); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Sight__NameAssignment_1846); 
+             after(grammarAccess.getSightAccess().getNameSTRINGTerminalRuleCall_1_0()); 
 
             }
 
@@ -1119,7 +1119,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -1131,8 +1131,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:461:1: rule__Sight__DescriptionAssignment_2 : ( RULE_STRING ) ;
     public final void rule__Sight__DescriptionAssignment_2() throws RecognitionException {
 
-			int stackSize = keepStackSize();
-
+        		int stackSize = keepStackSize();
+            
         try {
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:465:1: ( ( RULE_STRING ) )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:466:1: ( RULE_STRING )
@@ -1140,9 +1140,9 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:466:1: ( RULE_STRING )
             // ../org.xtext.quickfix.ui/src-gen/org/xtext/quickfix/ui/contentassist/antlr/internal/InternalExampleQuickfix.g:467:1: RULE_STRING
             {
-             before(grammarAccess.getSightAccess().getDescriptionSTRINGTerminalRuleCall_2_0());
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Sight__DescriptionAssignment_2877);
-             after(grammarAccess.getSightAccess().getDescriptionSTRINGTerminalRuleCall_2_0());
+             before(grammarAccess.getSightAccess().getDescriptionSTRINGTerminalRuleCall_2_0()); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Sight__DescriptionAssignment_2877); 
+             after(grammarAccess.getSightAccess().getDescriptionSTRINGTerminalRuleCall_2_0()); 
 
             }
 
@@ -1156,7 +1156,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
         }
         finally {
 
-		restoreStackSize(stackSize);
+            	restoreStackSize(stackSize);
 
         }
         return ;
@@ -1166,7 +1166,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalContentAssist
     // Delegated rules
 
 
-
+ 
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel61 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel68 = new BitSet(new long[]{0x0000000000000002L});

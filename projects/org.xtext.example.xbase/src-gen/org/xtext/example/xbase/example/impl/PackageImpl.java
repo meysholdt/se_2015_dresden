@@ -26,11 +26,11 @@ import org.xtext.example.xbase.example.ExamplePackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.impl.PackageImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.example.xbase.example.impl.PackageImpl#getClasses <em>Classes</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

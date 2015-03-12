@@ -13,6 +13,7 @@ import org.eclipse.xtext.ui.editor.syntaxcoloring.IHighlightedPositionAcceptor;
 public class SurveySemanticHighlightingCalculator extends DefaultSemanticHighlightingCalculator {
   private final static Pattern xtext = Pattern.compile(".*xtext.*", (Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE));
   
+  @Override
   protected boolean highlightElement(final EObject element, final IHighlightedPositionAcceptor acceptor) {
     if ((element instanceof Question)) {
       boolean _or = false;

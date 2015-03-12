@@ -1,6 +1,6 @@
 package org.xtext.example.parser.antlr.internal;
 
-// Hack: Use our own Lexer superclass by means of import.
+// Hack: Use our own Lexer superclass by means of import. 
 // Currently there is no other way to specify the superclass for the lexer.
 import org.eclipse.xtext.parser.antlr.Lexer;
 
@@ -28,7 +28,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
     // delegates
     // delegators
 
-    public InternalUnorderedgroupsLexer() {;}
+    public InternalUnorderedgroupsLexer() {;} 
     public InternalUnorderedgroupsLexer(CharStream input) {
         this(input, new RecognizerSharedState());
     }
@@ -46,7 +46,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:11:7: ( 'firstName' )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:11:9: 'firstName'
             {
-            match("firstName");
+            match("firstName"); 
 
 
             }
@@ -67,7 +67,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:12:7: ( 'age' )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:12:9: 'age'
             {
-            match("age");
+            match("age"); 
 
 
             }
@@ -88,7 +88,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:13:7: ( 'lastName' )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:13:9: 'lastName'
             {
-            match("lastName");
+            match("lastName"); 
 
 
             }
@@ -109,7 +109,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:14:7: ( 'yearOfBirth' )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:14:9: 'yearOfBirth'
             {
-            match("yearOfBirth");
+            match("yearOfBirth"); 
 
 
             }
@@ -141,7 +141,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
                 case 1 :
                     // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:240:11: '^'
                     {
-                    match('^');
+                    match('^'); 
 
                     }
                     break;
@@ -169,24 +169,24 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                 switch (alt2) {
-		case 1 :
-		    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:
-		    {
-		    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
-		        input.consume();
+            	case 1 :
+            	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:
+            	    {
+            	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
+            	        input.consume();
 
-		    }
-		    else {
-		        MismatchedSetException mse = new MismatchedSetException(null,input);
-		        recover(mse);
-		        throw mse;}
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop2;
+            	default :
+            	    break loop2;
                 }
             } while (true);
 
@@ -222,16 +222,16 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                 switch (alt3) {
-		case 1 :
-		    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:242:13: '0' .. '9'
-		    {
-		    matchRange('0','9');
+            	case 1 :
+            	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:242:13: '0' .. '9'
+            	    {
+            	    matchRange('0','9'); 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    if ( cnt3 >= 1 ) break loop3;
+            	default :
+            	    if ( cnt3 >= 1 ) break loop3;
                         EarlyExitException eee =
                             new EarlyExitException(3, input);
                         throw eee;
@@ -255,10 +255,10 @@ public class InternalUnorderedgroupsLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -276,10 +276,10 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
-                    match('\"');
-                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    match('\"'); 
+                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -294,52 +294,44 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                         switch (alt4) {
-			case 1 :
-			    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
-			    {
-			    match('\\');
-			    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
-			        input.consume();
+                    	case 1 :
+                    	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:21: '\\\\' .
+                    	    {
+                    	    match('\\'); 
+                    	    matchAny(); 
 
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    break;
+                    	case 2 :
+                    	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
+                    	        input.consume();
 
-
-			    }
-			    break;
-			case 2 :
-			    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:66: ~ ( ( '\\\\' | '\"' ) )
-			    {
-			    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
-			        input.consume();
-
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    else {
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
-			    }
-			    break;
+                    	    }
+                    	    break;
 
-			default :
-			    break loop4;
+                    	default :
+                    	    break loop4;
                         }
                     } while (true);
 
-                    match('\"');
+                    match('\"'); 
 
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
-                    match('\'');
-                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    match('\''); 
+                    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -354,44 +346,36 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                         switch (alt5) {
-			case 1 :
-			    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
-			    {
-			    match('\\');
-			    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
-			        input.consume();
+                    	case 1 :
+                    	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:54: '\\\\' .
+                    	    {
+                    	    match('\\'); 
+                    	    matchAny(); 
 
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    break;
+                    	case 2 :
+                    	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
+                    	        input.consume();
 
-
-			    }
-			    break;
-			case 2 :
-			    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:244:137: ~ ( ( '\\\\' | '\\'' ) )
-			    {
-			    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
-			        input.consume();
-
-			    }
-			    else {
-			        MismatchedSetException mse = new MismatchedSetException(null,input);
-			        recover(mse);
-			        throw mse;}
+                    	    }
+                    	    else {
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
-			    }
-			    break;
+                    	    }
+                    	    break;
 
-			default :
-			    break loop5;
+                    	default :
+                    	    break loop5;
                         }
                     } while (true);
 
-                    match('\'');
+                    match('\''); 
 
                     }
                     break;
@@ -417,7 +401,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:246:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:246:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
-            match("/*");
+            match("/*"); 
 
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:246:24: ( options {greedy=false; } : . )*
             loop7:
@@ -443,20 +427,20 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                 switch (alt7) {
-		case 1 :
-		    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:246:52: .
-		    {
-		    matchAny();
+            	case 1 :
+            	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:246:52: .
+            	    {
+            	    matchAny(); 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop7;
+            	default :
+            	    break loop7;
                 }
             } while (true);
 
-            match("*/");
+            match("*/"); 
 
 
             }
@@ -477,7 +461,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:248:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:248:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
-            match("//");
+            match("//"); 
 
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:248:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
@@ -491,24 +475,24 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                 switch (alt8) {
-		case 1 :
-		    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:248:24: ~ ( ( '\\n' | '\\r' ) )
-		    {
-		    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
-		        input.consume();
+            	case 1 :
+            	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:248:24: ~ ( ( '\\n' | '\\r' ) )
+            	    {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
+            	        input.consume();
 
-		    }
-		    else {
-		        MismatchedSetException mse = new MismatchedSetException(null,input);
-		        recover(mse);
-		        throw mse;}
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop8;
+            	default :
+            	    break loop8;
                 }
             } while (true);
 
@@ -534,14 +518,14 @@ public class InternalUnorderedgroupsLexer extends Lexer {
                         case 1 :
                             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:248:41: '\\r'
                             {
-                            match('\r');
+                            match('\r'); 
 
                             }
                             break;
 
                     }
 
-                    match('\n');
+                    match('\n'); 
 
                     }
                     break;
@@ -580,24 +564,24 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
 
                 switch (alt11) {
-		case 1 :
-		    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:
-		    {
-		    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
-		        input.consume();
+            	case 1 :
+            	    // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:
+            	    {
+            	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
+            	        input.consume();
 
-		    }
-		    else {
-		        MismatchedSetException mse = new MismatchedSetException(null,input);
-		        recover(mse);
-		        throw mse;}
+            	    }
+            	    else {
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    if ( cnt11 >= 1 ) break loop11;
+            	default :
+            	    if ( cnt11 >= 1 ) break loop11;
                         EarlyExitException eee =
                             new EarlyExitException(11, input);
                         throw eee;
@@ -624,7 +608,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:252:16: ( . )
             // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:252:18: .
             {
-            matchAny();
+            matchAny(); 
 
             }
 
@@ -644,77 +628,77 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             case 1 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:10: T__11
                 {
-                mT__11();
+                mT__11(); 
 
                 }
                 break;
             case 2 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:16: T__12
                 {
-                mT__12();
+                mT__12(); 
 
                 }
                 break;
             case 3 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:22: T__13
                 {
-                mT__13();
+                mT__13(); 
 
                 }
                 break;
             case 4 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:28: T__14
                 {
-                mT__14();
+                mT__14(); 
 
                 }
                 break;
             case 5 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:34: RULE_ID
                 {
-                mRULE_ID();
+                mRULE_ID(); 
 
                 }
                 break;
             case 6 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:42: RULE_INT
                 {
-                mRULE_INT();
+                mRULE_INT(); 
 
                 }
                 break;
             case 7 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:51: RULE_STRING
                 {
-                mRULE_STRING();
+                mRULE_STRING(); 
 
                 }
                 break;
             case 8 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:63: RULE_ML_COMMENT
                 {
-                mRULE_ML_COMMENT();
+                mRULE_ML_COMMENT(); 
 
                 }
                 break;
             case 9 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:79: RULE_SL_COMMENT
                 {
-                mRULE_SL_COMMENT();
+                mRULE_SL_COMMENT(); 
 
                 }
                 break;
             case 10 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:95: RULE_WS
                 {
-                mRULE_WS();
+                mRULE_WS(); 
 
                 }
                 break;
             case 11 :
                 // ../org.xtext.example.unorderedgroups/src-gen/org/xtext/example/parser/antlr/internal/InternalUnorderedgroups.g:1:103: RULE_ANY_OTHER
                 {
-                mRULE_ANY_OTHER();
+                mRULE_ANY_OTHER(); 
 
                 }
                 break;
@@ -744,8 +728,8 @@ public class InternalUnorderedgroupsLexer extends Lexer {
         "\155\1\145\1\151\1\145\1\172\1\162\1\172\1\uffff\1\164\1\uffff\1"+
         "\150\1\172\1\uffff";
     static final String DFA12_acceptS =
-        "\6\uffff\1\5\1\6\3\uffff\1\12\1\13\1\uffff\1\5\3\uffff\1\6\1\7\1"+
-        "\10\1\11\1\12\5\uffff\1\2\17\uffff\1\3\1\uffff\1\1\2\uffff\1\4";
+        "\6\uffff\1\5\1\6\3\uffff\1\12\1\13\1\uffff\1\5\3\uffff\1\6\1\7"+
+        "\1\10\1\11\1\12\5\uffff\1\2\17\uffff\1\3\1\uffff\1\1\2\uffff\1\4";
     static final String DFA12_specialS =
         "\1\1\7\uffff\1\0\1\2\50\uffff}>";
     static final String[] DFA12_transitionS = {
@@ -837,9 +821,9 @@ public class InternalUnorderedgroupsLexer extends Lexer {
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
-		int _s = s;
+        	int _s = s;
             switch ( s ) {
-                    case 0 :
+                    case 0 : 
                         int LA12_8 = input.LA(1);
 
                         s = -1;
@@ -849,7 +833,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 1 :
+                    case 1 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
@@ -879,7 +863,7 @@ public class InternalUnorderedgroupsLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 2 :
+                    case 2 : 
                         int LA12_9 = input.LA(1);
 
                         s = -1;
@@ -896,6 +880,6 @@ public class InternalUnorderedgroupsLexer extends Lexer {
             throw nvae;
         }
     }
-
+ 
 
 }

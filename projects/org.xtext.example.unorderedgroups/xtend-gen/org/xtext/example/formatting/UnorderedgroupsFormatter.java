@@ -16,6 +16,7 @@ import org.eclipse.xtext.formatting.impl.FormattingConfig;
  */
 @SuppressWarnings("all")
 public class UnorderedgroupsFormatter extends AbstractDeclarativeFormatter {
+  @Override
   protected void configureFormatting(final FormattingConfig c) {
   }
 }

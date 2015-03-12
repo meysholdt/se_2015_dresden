@@ -4,11 +4,11 @@
 <plugin>
 
   <extension point="org.eclipse.emf.ecore.generated_package">
-    <package
-       uri = "http://www.xtext.org/example/Unorderedgroups"
+    <package 
+       uri = "http://www.xtext.org/example/Unorderedgroups" 
        class = "org.xtext.example.unorderedgroups.UnorderedgroupsPackage"
-       genModel = "model/generated/Unorderedgroups.genmodel" />
-
+       genModel = "model/generated/Unorderedgroups.genmodel" /> 
+	
   </extension>
 
 

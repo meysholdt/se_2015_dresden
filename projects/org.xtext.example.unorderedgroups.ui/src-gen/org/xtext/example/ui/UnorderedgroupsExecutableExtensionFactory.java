@@ -12,7 +12,7 @@ import org.xtext.example.ui.internal.UnorderedgroupsActivator;
 
 /**
  * This class was generated. Customizations should only happen in a newly
- * introduced subclass.
+ * introduced subclass. 
  */
 public class UnorderedgroupsExecutableExtensionFactory extends AbstractGuiceAwareExecutableExtensionFactory {
 
@@ -20,10 +20,10 @@ public class UnorderedgroupsExecutableExtensionFactory extends AbstractGuiceAwar
 	protected Bundle getBundle() {
 		return UnorderedgroupsActivator.getInstance().getBundle();
 	}
-
+	
 	@Override
 	protected Injector getInjector() {
 		return UnorderedgroupsActivator.getInstance().getInjector(UnorderedgroupsActivator.ORG_XTEXT_EXAMPLE_UNORDEREDGROUPS);
 	}
-
+	
 }

@@ -15,11 +15,11 @@ import org.eclipse.xtext.xbase.XExpression;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.Method#getParameters <em>Parameters</em>}</li>
  *   <li>{@link org.xtext.example.xbase.example.Method#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.example.xbase.example.ExamplePackage#getMethod()
  * @model

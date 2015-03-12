@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Survey#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Survey#getTitle <em>Title</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Survey#getPages <em>Pages</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.tutorial.survey.survey.SurveyPackage#getSurvey()
  * @model

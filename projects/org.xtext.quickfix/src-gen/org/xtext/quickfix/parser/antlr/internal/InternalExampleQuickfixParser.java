@@ -1,4 +1,4 @@
-package org.xtext.quickfix.parser.antlr.internal;
+package org.xtext.quickfix.parser.antlr.internal; 
 
 import org.eclipse.xtext.*;
 import org.eclipse.xtext.parser.*;
@@ -45,32 +45,32 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
         }
         public InternalExampleQuickfixParser(TokenStream input, RecognizerSharedState state) {
             super(input, state);
-
+             
         }
-
+        
 
     public String[] getTokenNames() { return InternalExampleQuickfixParser.tokenNames; }
     public String getGrammarFileName() { return "../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g"; }
 
 
 
-	private ExampleQuickfixGrammarAccess grammarAccess;
-
+     	private ExampleQuickfixGrammarAccess grammarAccess;
+     	
         public InternalExampleQuickfixParser(TokenStream input, ExampleQuickfixGrammarAccess grammarAccess) {
             this(input);
             this.grammarAccess = grammarAccess;
             registerRules(grammarAccess.getGrammar());
         }
-
+        
         @Override
         protected String getFirstRuleName() {
-		return "Model";
-	}
-
-	@Override
-	protected ExampleQuickfixGrammarAccess getGrammarAccess() {
-		return grammarAccess;
-	}
+        	return "Model";	
+       	}
+       	
+       	@Override
+       	protected ExampleQuickfixGrammarAccess getGrammarAccess() {
+       		return grammarAccess;
+       	}
 
 
 
@@ -86,23 +86,23 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:68:2: (iv_ruleModel= ruleModel EOF )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:69:2: iv_ruleModel= ruleModel EOF
             {
-             newCompositeNode(grammarAccess.getModelRule());
+             newCompositeNode(grammarAccess.getModelRule()); 
             pushFollow(FOLLOW_ruleModel_in_entryRuleModel75);
             iv_ruleModel=ruleModel();
 
             state._fsp--;
 
-             current =iv_ruleModel;
-            match(input,EOF,FOLLOW_EOF_in_entryRuleModel85);
+             current =iv_ruleModel; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleModel85); 
 
             }
 
         }
-
-            catch (RecognitionException re) {
-                recover(input,re);
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
                 appendSkippedTokens();
-            }
+            } 
         finally {
         }
         return current;
@@ -118,8 +118,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
         EObject lv_cities_0_0 = null;
 
 
-         enterRule();
-
+         enterRule(); 
+            
         try {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:79:28: ( ( (lv_cities_0_0= ruleCity ) )* )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:80:1: ( (lv_cities_0_0= ruleCity ) )*
@@ -136,53 +136,53 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
 
 
                 switch (alt1) {
-		case 1 :
-		    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:81:1: (lv_cities_0_0= ruleCity )
-		    {
-		    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:81:1: (lv_cities_0_0= ruleCity )
-		    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:82:3: lv_cities_0_0= ruleCity
-		    {
+            	case 1 :
+            	    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:81:1: (lv_cities_0_0= ruleCity )
+            	    {
+            	    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:81:1: (lv_cities_0_0= ruleCity )
+            	    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:82:3: lv_cities_0_0= ruleCity
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getModelAccess().getCitiesCityParserRuleCall_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleCity_in_ruleModel130);
+            	    lv_cities_0_0=ruleCity();
 
-			        newCompositeNode(grammarAccess.getModelAccess().getCitiesCityParserRuleCall_0());
-
-		    pushFollow(FOLLOW_ruleCity_in_ruleModel130);
-		    lv_cities_0_0=ruleCity();
-
-		    state._fsp--;
-
-
-			        if (current==null) {
-			            current = createModelElementForParent(grammarAccess.getModelRule());
-			        }
-					add(
-						current,
-						"cities",
-					lv_cities_0_0,
-					"City");
-			        afterParserOrEnumRuleCall();
+            	    state._fsp--;
 
 
-		    }
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getModelRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"cities",
+            	            		lv_cities_0_0, 
+            	            		"City");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop1;
+            	default :
+            	    break loop1;
                 }
             } while (true);
 
 
             }
 
-             leaveRule();
+             leaveRule(); 
         }
-
-            catch (RecognitionException re) {
-                recover(input,re);
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
                 appendSkippedTokens();
-            }
+            } 
         finally {
         }
         return current;
@@ -202,23 +202,23 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:107:2: (iv_ruleCity= ruleCity EOF )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:108:2: iv_ruleCity= ruleCity EOF
             {
-             newCompositeNode(grammarAccess.getCityRule());
+             newCompositeNode(grammarAccess.getCityRule()); 
             pushFollow(FOLLOW_ruleCity_in_entryRuleCity166);
             iv_ruleCity=ruleCity();
 
             state._fsp--;
 
-             current =iv_ruleCity;
-            match(input,EOF,FOLLOW_EOF_in_entryRuleCity176);
+             current =iv_ruleCity; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleCity176); 
 
             }
 
         }
-
-            catch (RecognitionException re) {
-                recover(input,re);
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
                 appendSkippedTokens();
-            }
+            } 
         finally {
         }
         return current;
@@ -238,8 +238,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
         EObject lv_sights_3_0 = null;
 
 
-         enterRule();
-
+         enterRule(); 
+            
         try {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:118:28: ( (otherlv_0= 'city' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= '{' ( (lv_sights_3_0= ruleSight ) )* otherlv_4= '}' ) )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:119:1: (otherlv_0= 'city' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= '{' ( (lv_sights_3_0= ruleSight ) )* otherlv_4= '}' )
@@ -247,40 +247,40 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:119:1: (otherlv_0= 'city' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= '{' ( (lv_sights_3_0= ruleSight ) )* otherlv_4= '}' )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:119:3: otherlv_0= 'city' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= '{' ( (lv_sights_3_0= ruleSight ) )* otherlv_4= '}'
             {
-            otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleCity213);
+            otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleCity213); 
 
-			newLeafNode(otherlv_0, grammarAccess.getCityAccess().getCityKeyword_0());
-
+                	newLeafNode(otherlv_0, grammarAccess.getCityAccess().getCityKeyword_0());
+                
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:123:1: ( (lv_name_1_0= RULE_STRING ) )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:124:1: (lv_name_1_0= RULE_STRING )
             {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:124:1: (lv_name_1_0= RULE_STRING )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:125:3: lv_name_1_0= RULE_STRING
             {
-            lv_name_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleCity230);
+            lv_name_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleCity230); 
 
-				newLeafNode(lv_name_1_0, grammarAccess.getCityAccess().getNameSTRINGTerminalRuleCall_1_0());
+            			newLeafNode(lv_name_1_0, grammarAccess.getCityAccess().getNameSTRINGTerminalRuleCall_1_0()); 
+            		
 
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getCityRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"name",
+                    		lv_name_1_0, 
+                    		"STRING");
+            	    
 
-		        if (current==null) {
-		            current = createModelElement(grammarAccess.getCityRule());
-		        }
-				setWithLastConsumed(
-					current,
-					"name",
-				lv_name_1_0,
-				"STRING");
+            }
 
 
             }
 
+            otherlv_2=(Token)match(input,12,FOLLOW_12_in_ruleCity247); 
 
-            }
-
-            otherlv_2=(Token)match(input,12,FOLLOW_12_in_ruleCity247);
-
-			newLeafNode(otherlv_2, grammarAccess.getCityAccess().getLeftCurlyBracketKeyword_2());
-
+                	newLeafNode(otherlv_2, grammarAccess.getCityAccess().getLeftCurlyBracketKeyword_2());
+                
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:145:1: ( (lv_sights_3_0= ruleSight ) )*
             loop2:
             do {
@@ -293,60 +293,60 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
 
 
                 switch (alt2) {
-		case 1 :
-		    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:146:1: (lv_sights_3_0= ruleSight )
-		    {
-		    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:146:1: (lv_sights_3_0= ruleSight )
-		    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:147:3: lv_sights_3_0= ruleSight
-		    {
+            	case 1 :
+            	    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:146:1: (lv_sights_3_0= ruleSight )
+            	    {
+            	    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:146:1: (lv_sights_3_0= ruleSight )
+            	    // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:147:3: lv_sights_3_0= ruleSight
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getCityAccess().getSightsSightParserRuleCall_3_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleSight_in_ruleCity268);
+            	    lv_sights_3_0=ruleSight();
 
-			        newCompositeNode(grammarAccess.getCityAccess().getSightsSightParserRuleCall_3_0());
-
-		    pushFollow(FOLLOW_ruleSight_in_ruleCity268);
-		    lv_sights_3_0=ruleSight();
-
-		    state._fsp--;
-
-
-			        if (current==null) {
-			            current = createModelElementForParent(grammarAccess.getCityRule());
-			        }
-					add(
-						current,
-						"sights",
-					lv_sights_3_0,
-					"Sight");
-			        afterParserOrEnumRuleCall();
+            	    state._fsp--;
 
 
-		    }
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getCityRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"sights",
+            	            		lv_sights_3_0, 
+            	            		"Sight");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
 
 
-		    }
-		    break;
+            	    }
+            	    break;
 
-		default :
-		    break loop2;
+            	default :
+            	    break loop2;
                 }
             } while (true);
 
-            otherlv_4=(Token)match(input,13,FOLLOW_13_in_ruleCity281);
+            otherlv_4=(Token)match(input,13,FOLLOW_13_in_ruleCity281); 
 
-			newLeafNode(otherlv_4, grammarAccess.getCityAccess().getRightCurlyBracketKeyword_4());
+                	newLeafNode(otherlv_4, grammarAccess.getCityAccess().getRightCurlyBracketKeyword_4());
+                
+
+            }
 
 
             }
 
-
-            }
-
-             leaveRule();
+             leaveRule(); 
         }
-
-            catch (RecognitionException re) {
-                recover(input,re);
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
                 appendSkippedTokens();
-            }
+            } 
         finally {
         }
         return current;
@@ -366,23 +366,23 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:176:2: (iv_ruleSight= ruleSight EOF )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:177:2: iv_ruleSight= ruleSight EOF
             {
-             newCompositeNode(grammarAccess.getSightRule());
+             newCompositeNode(grammarAccess.getSightRule()); 
             pushFollow(FOLLOW_ruleSight_in_entryRuleSight317);
             iv_ruleSight=ruleSight();
 
             state._fsp--;
 
-             current =iv_ruleSight;
-            match(input,EOF,FOLLOW_EOF_in_entryRuleSight327);
+             current =iv_ruleSight; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleSight327); 
 
             }
 
         }
-
-            catch (RecognitionException re) {
-                recover(input,re);
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
                 appendSkippedTokens();
-            }
+            } 
         finally {
         }
         return current;
@@ -399,8 +399,8 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
         Token lv_name_1_0=null;
         Token lv_description_2_0=null;
 
-         enterRule();
-
+         enterRule(); 
+            
         try {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:187:28: ( (otherlv_0= 'sight' ( (lv_name_1_0= RULE_STRING ) ) ( (lv_description_2_0= RULE_STRING ) ) ) )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:188:1: (otherlv_0= 'sight' ( (lv_name_1_0= RULE_STRING ) ) ( (lv_description_2_0= RULE_STRING ) ) )
@@ -408,30 +408,30 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:188:1: (otherlv_0= 'sight' ( (lv_name_1_0= RULE_STRING ) ) ( (lv_description_2_0= RULE_STRING ) ) )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:188:3: otherlv_0= 'sight' ( (lv_name_1_0= RULE_STRING ) ) ( (lv_description_2_0= RULE_STRING ) )
             {
-            otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleSight364);
+            otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleSight364); 
 
-			newLeafNode(otherlv_0, grammarAccess.getSightAccess().getSightKeyword_0());
-
+                	newLeafNode(otherlv_0, grammarAccess.getSightAccess().getSightKeyword_0());
+                
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:192:1: ( (lv_name_1_0= RULE_STRING ) )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:193:1: (lv_name_1_0= RULE_STRING )
             {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:193:1: (lv_name_1_0= RULE_STRING )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:194:3: lv_name_1_0= RULE_STRING
             {
-            lv_name_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSight381);
+            lv_name_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSight381); 
 
-				newLeafNode(lv_name_1_0, grammarAccess.getSightAccess().getNameSTRINGTerminalRuleCall_1_0());
+            			newLeafNode(lv_name_1_0, grammarAccess.getSightAccess().getNameSTRINGTerminalRuleCall_1_0()); 
+            		
 
-
-		        if (current==null) {
-		            current = createModelElement(grammarAccess.getSightRule());
-		        }
-				setWithLastConsumed(
-					current,
-					"name",
-				lv_name_1_0,
-				"STRING");
-
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getSightRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"name",
+                    		lv_name_1_0, 
+                    		"STRING");
+            	    
 
             }
 
@@ -444,23 +444,20 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:211:1: (lv_description_2_0= RULE_STRING )
             // ../org.xtext.quickfix/src-gen/org/xtext/quickfix/parser/antlr/internal/InternalExampleQuickfix.g:212:3: lv_description_2_0= RULE_STRING
             {
-            lv_description_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSight403);
+            lv_description_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSight403); 
 
-				newLeafNode(lv_description_2_0, grammarAccess.getSightAccess().getDescriptionSTRINGTerminalRuleCall_2_0());
+            			newLeafNode(lv_description_2_0, grammarAccess.getSightAccess().getDescriptionSTRINGTerminalRuleCall_2_0()); 
+            		
 
-
-		        if (current==null) {
-		            current = createModelElement(grammarAccess.getSightRule());
-		        }
-				setWithLastConsumed(
-					current,
-					"description",
-				lv_description_2_0,
-				"STRING");
-
-
-            }
-
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getSightRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"description",
+                    		lv_description_2_0, 
+                    		"STRING");
+            	    
 
             }
 
@@ -470,13 +467,16 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
 
             }
 
-             leaveRule();
+
+            }
+
+             leaveRule(); 
         }
-
-            catch (RecognitionException re) {
-                recover(input,re);
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
                 appendSkippedTokens();
-            }
+            } 
         finally {
         }
         return current;
@@ -486,7 +486,7 @@ public class InternalExampleQuickfixParser extends AbstractInternalAntlrParser {
     // Delegated rules
 
 
-
+ 
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel85 = new BitSet(new long[]{0x0000000000000002L});

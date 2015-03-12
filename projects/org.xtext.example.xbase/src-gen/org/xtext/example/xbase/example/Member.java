@@ -11,10 +11,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.Member#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.example.xbase.example.ExamplePackage#getMember()
  * @model

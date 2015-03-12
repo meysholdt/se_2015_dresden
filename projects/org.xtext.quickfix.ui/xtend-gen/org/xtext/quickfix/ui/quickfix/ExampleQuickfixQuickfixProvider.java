@@ -36,6 +36,7 @@ public class ExampleQuickfixQuickfixProvider extends DefaultQuickfixProvider {
     String _plus_1 = (_plus + "\".");
     acceptor.accept(issue, "Capitalize name", _plus_1, 
       "upcase.png", new IModification() {
+      @Override
       public void apply(final IModificationContext context) throws Exception {
         final IXtextDocument xtextDocument = context.getXtextDocument();
         Integer _offset = issue.getOffset();
@@ -54,6 +55,7 @@ public class ExampleQuickfixQuickfixProvider extends DefaultQuickfixProvider {
     acceptor.accept(issue, "Add sight to make city more interesting", 
       "Add a random sight, to make the city look more interesting.", 
       null, new ISemanticModification() {
+      @Override
       public void apply(final EObject element, final IModificationContext context) throws Exception {
         final City c = ((City) element);
         final Sight sight = ExampleQuickfixFactory.eINSTANCE.createSight();

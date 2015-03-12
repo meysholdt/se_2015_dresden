@@ -18,10 +18,10 @@ import org.xtext.example.xbase.example.Member;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.impl.MemberImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

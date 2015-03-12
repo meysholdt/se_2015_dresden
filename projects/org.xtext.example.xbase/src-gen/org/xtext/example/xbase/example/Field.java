@@ -11,10 +11,10 @@ import org.eclipse.xtext.common.types.JvmTypeReference;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.Field#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.example.xbase.example.ExamplePackage#getField()
  * @model

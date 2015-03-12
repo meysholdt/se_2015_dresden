@@ -21,10 +21,10 @@ import org.xtext.example.xbase.example.Field;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.impl.FieldImpl#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

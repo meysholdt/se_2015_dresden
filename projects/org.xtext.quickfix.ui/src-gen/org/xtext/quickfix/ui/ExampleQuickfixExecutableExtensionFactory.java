@@ -12,7 +12,7 @@ import org.xtext.quickfix.ui.internal.ExampleQuickfixActivator;
 
 /**
  * This class was generated. Customizations should only happen in a newly
- * introduced subclass.
+ * introduced subclass. 
  */
 public class ExampleQuickfixExecutableExtensionFactory extends AbstractGuiceAwareExecutableExtensionFactory {
 
@@ -20,10 +20,10 @@ public class ExampleQuickfixExecutableExtensionFactory extends AbstractGuiceAwar
 	protected Bundle getBundle() {
 		return ExampleQuickfixActivator.getInstance().getBundle();
 	}
-
+	
 	@Override
 	protected Injector getInjector() {
 		return ExampleQuickfixActivator.getInstance().getInjector(ExampleQuickfixActivator.ORG_XTEXT_QUICKFIX_EXAMPLEQUICKFIX);
 	}
-
+	
 }

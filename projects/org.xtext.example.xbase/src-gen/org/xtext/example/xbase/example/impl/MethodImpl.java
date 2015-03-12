@@ -30,11 +30,11 @@ import org.xtext.example.xbase.example.Method;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.impl.MethodImpl#getParameters <em>Parameters</em>}</li>
  *   <li>{@link org.xtext.example.xbase.example.impl.MethodImpl#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

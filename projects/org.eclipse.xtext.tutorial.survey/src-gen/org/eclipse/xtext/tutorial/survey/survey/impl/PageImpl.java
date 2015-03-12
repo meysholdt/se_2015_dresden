@@ -29,12 +29,12 @@ import org.eclipse.xtext.tutorial.survey.survey.SurveyPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.impl.PageImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.impl.PageImpl#getQuestions <em>Questions</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.impl.PageImpl#getFollowUps <em>Follow Ups</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -18,13 +18,13 @@ import org.xtext.example.unorderedgroups.UnorderedgroupsPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.unorderedgroups.impl.EmployeeImpl#getFirstName <em>First Name</em>}</li>
  *   <li>{@link org.xtext.example.unorderedgroups.impl.EmployeeImpl#getAge <em>Age</em>}</li>
  *   <li>{@link org.xtext.example.unorderedgroups.impl.EmployeeImpl#getLastName <em>Last Name</em>}</li>
  *   <li>{@link org.xtext.example.unorderedgroups.impl.EmployeeImpl#getYearOfBirth <em>Year Of Birth</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

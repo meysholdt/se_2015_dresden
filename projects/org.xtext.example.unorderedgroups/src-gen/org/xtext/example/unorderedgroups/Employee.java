@@ -11,13 +11,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.unorderedgroups.Employee#getFirstName <em>First Name</em>}</li>
  *   <li>{@link org.xtext.example.unorderedgroups.Employee#getAge <em>Age</em>}</li>
  *   <li>{@link org.xtext.example.unorderedgroups.Employee#getLastName <em>Last Name</em>}</li>
  *   <li>{@link org.xtext.example.unorderedgroups.Employee#getYearOfBirth <em>Year Of Birth</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.example.unorderedgroups.UnorderedgroupsPackage#getEmployee()
  * @model

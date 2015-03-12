@@ -18,11 +18,11 @@ import org.xtext.quickfix.exampleQuickfix.Sight;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.quickfix.exampleQuickfix.impl.SightImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.quickfix.exampleQuickfix.impl.SightImpl#getDescription <em>Description</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

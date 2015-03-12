@@ -18,11 +18,11 @@ import org.eclipse.xtext.tutorial.survey.survey.SurveyPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.impl.QuestionImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.impl.QuestionImpl#getText <em>Text</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

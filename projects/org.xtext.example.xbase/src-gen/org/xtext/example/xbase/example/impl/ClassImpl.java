@@ -27,11 +27,11 @@ import org.xtext.example.xbase.example.Member;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.example.xbase.example.impl.ClassImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.example.xbase.example.impl.ClassImpl#getMembers <em>Members</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

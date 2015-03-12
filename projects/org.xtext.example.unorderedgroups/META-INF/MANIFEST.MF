@@ -16,7 +16,10 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.emf.ecore,
  org.eclipse.emf.common,
  org.antlr.runtime,
- org.eclipse.xtext.common.types
+ org.eclipse.xtext.common.types,
+ org.eclipse.equinox.common,
+ org.eclipse.xtext.xbase.lib,
+ org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
 Import-Package: org.apache.log4j,
  org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
@@ -28,4 +31,7 @@ Export-Package: org.xtext.example,
  org.xtext.example.validation,
  org.xtext.example.scoping,
  org.xtext.example.generator,
- org.xtext.example.formatting
+ org.xtext.example.formatting,
+ org.xtext.example.unorderedgroups,
+ org.xtext.example.unorderedgroups.impl,
+ org.xtext.example.unorderedgroups.util

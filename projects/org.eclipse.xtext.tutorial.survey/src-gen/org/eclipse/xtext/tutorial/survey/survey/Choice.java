@@ -11,12 +11,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Choice#isFreetext <em>Freetext</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Choice#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.xtext.tutorial.survey.survey.Choice#getText <em>Text</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.tutorial.survey.survey.SurveyPackage#getChoice()
  * @model

@@ -13,10 +13,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.quickfix.exampleQuickfix.Model#getCities <em>Cities</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.quickfix.exampleQuickfix.ExampleQuickfixPackage#getModel()
  * @model
