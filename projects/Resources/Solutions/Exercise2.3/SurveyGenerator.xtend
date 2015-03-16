@@ -23,9 +23,7 @@ class SurveyGenerator implements IGenerator {
 		val survey = resource.contents.head as Survey
 		if(survey != null) {
 			for(page: survey.pages) {
-				fsa.generateFile(page.name + '.html', 
-					SurveyOutputConfigurationProvider.htmlOutputConfig, 
-					toHtml(survey, page)
+				fsa.generateFile(page.name + '.html', toHtml(survey, page)
 				)
 			}
 			fsa.generateFile("main/PageFlow.java", survey.toPageFlow)
@@ -115,7 +113,7 @@ class SurveyGenerator implements IGenerator {
 		choice.name ?: 'answer_' + (choice.eContainer as ChoiceQuestion).choices.indexOf(choice) 
 	}
 	
-	def toPageFlow(Survey survey) '''
+	def toPageFlow(Survey survey) ''' 
 		package main;
 		
 		import org.eclipse.xtext.tutorial.survey.runtime.IFormState;
@@ -131,18 +129,10 @@ class SurveyGenerator implements IGenerator {
 				String currentPage = formState.getCurrentPage();
 				if(currentPage == null)
 					return getFirstPage();
-				«FOR page: survey.pages.filter[!followUps.empty]»
-				if("«page.name»".equals(currentPage)) {
-					«FOR followUp : page.followUps»
-						«IF followUp.guard != null»
-							if("«followUp.guard.answer.name»".equals(formState.getValue("«followUp.guard.question.name»"))) {
-								return "«followUp.next.name»";
-							}
-						«ELSE»
-							return "«followUp.next.name»";
-						«ENDIF»
-					«ENDFOR»
-				}
+				«FOR page: survey.pages.filter[next != null]»
+					if("«page.name»".equals(currentPage)) {
+						return "«page.next.name»";
+					}
 				«ENDFOR»
 				return null;
 			}
