@@ -1,0 +1,37 @@
+
+M 09:00 slides: Introduction, Installation, Outline
+S 09:05 Demo
+M 09:20 slides: Build your DSL with Xtext
+M 09:35 exercise 0
+S 09:50 slides: basic grammar
+S 10:05: exercise 1: grammar
+P 10:30
+
+M 11:00 exercise 1: auflösung
+M 11:10 slides: Xtend
+S 11:25 exercise 2: Generator
+S 11:55 exercise 2: Auflösung
+M 12:10 slides: Validator
+M 12:15: exercise validation
+M 12:25: exercise Auflösung
+P 12:30
+
+S 13:30: slides: scoping
+M 13:50: exercise: scoping
+M 14:20: exercise: Auflösung
+M 14:30: slides: advanced grammar + AST construction
+S 14:45: slides: EMF integration + Index
+P 15:00
+
+M 15:30: slides: code completion
+M 15:35: demo: template proposals
+M 15:45: slides: formatting
+S 15:55: slides: quickfix
+S 16:00: slides: syntax highlighting
+S 16:10: slides: outline
+M 16:15: slides: ASTConstruction/Expression
+M 16:30: Xpect
+S 16:40: Xbase
+S 16:50: Problem Solving
+  17:00
+
